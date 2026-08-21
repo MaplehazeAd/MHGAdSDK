@@ -1,0 +1,11 @@
+framework module MHGAdSDK {
+  umbrella header "MHGAdSDK.h"
+  export *
+
+  module * { export * }
+}
+
+module MHGAdSDK.Swift {
+  header "MHGAdSDK-Swift.h"
+  requires objc
+}

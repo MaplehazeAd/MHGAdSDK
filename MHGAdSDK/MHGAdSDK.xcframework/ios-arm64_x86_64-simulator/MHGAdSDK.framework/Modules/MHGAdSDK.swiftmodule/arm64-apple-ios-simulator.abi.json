@@ -1,0 +1,21 @@
+{
+  "ABIRoot": {
+    "kind": "Root",
+    "name": "MHGAdSDK",
+    "printedName": "MHGAdSDK",
+    "children": [
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "MHGAdSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      }
+    ],
+    "json_format_version": 8
+  },
+  "ConstValues": []
+}
