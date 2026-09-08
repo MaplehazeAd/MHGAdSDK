@@ -70,13 +70,13 @@ NS_ASSUME_NONNULL_BEGIN
             skipView:(UIView * _Nullable)skipView;
 
 // get current ecpm
-- (NSInteger)ecpm;
+- (NSString *)ecpm;
 
 // send win
-- (void)sendWinNotification:(NSInteger)ecpm;
+- (void)sendWinNotification:(NSString *)ecpm;
 
 // send loss
-- (void)sendLossNotification:(NSInteger)ecpm;
+- (void)sendLossNotification:(NSString *)ecpm;
 
 - (MHAdExtraInfo *)getExtraInfo;
 

@@ -26,7 +26,7 @@
 		</data>
 		<key>Headers/MHGInterstitialAd.h</key>
 		<data>
-		A8VXwx+FZ82Z6jYGGlIP7qWzbwk=
+		WwmJJcWWkaeijC19xPyiTgH8R5g=
 		</data>
 		<key>Headers/MHGNativeAd.h</key>
 		<data>
@@ -42,7 +42,7 @@
 		</data>
 		<key>Headers/MHGNativeAdModel.h</key>
 		<data>
-		iFm8DeVlgPia8Oa8JaFCL56E7V8=
+		UdSJAPVpUDPs1GNBlNC28kvEIrc=
 		</data>
 		<key>Headers/MHGNativeAdView.h</key>
 		<data>
@@ -54,11 +54,11 @@
 		</data>
 		<key>Headers/MHGRewardedVideoAd.h</key>
 		<data>
-		dgX6dYF6UzUN+KE6q2GOeKzMC3Y=
+		/bUotI0cZo5tAelW0dM6kuxPQlQ=
 		</data>
 		<key>Headers/MHGSplashAd.h</key>
 		<data>
-		GPYQa3wKDUGQg7q3AzK2Ssjy7rE=
+		oVQ56Bch2GUbpg++y9q1lDxH8Bc=
 		</data>
 		<key>Info.plist</key>
 		<data>
@@ -406,7 +406,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			27U9NuGeLh1EmBa0fLSmriOuFlUeT/xz+MVYR2v/Fl8=
+			z7alUz17DYXPPCWOsu+2C+mBsCBpf2NireD/6hx66es=
 			</data>
 		</dict>
 		<key>Headers/MHGNativeAd.h</key>
@@ -434,7 +434,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Jz/PK16RvXWpHGLxUedgnDh5fb99W2zxwbDW4nXiyl0=
+			iY9+UkIXoZRgnyKcZOgMQfYky8dOz5Xy4ie5hdbzKKY=
 			</data>
 		</dict>
 		<key>Headers/MHGNativeAdView.h</key>
@@ -455,14 +455,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			qnV1PJhos38+XsKK7kN2QvXNvaxO8UevM1qwLsXH8dg=
+			JwkspYMElR8nGMFpNRoxisxtxyXYraGguFF6NE+XOBc=
 			</data>
 		</dict>
 		<key>Headers/MHGSplashAd.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			LL/wRS20BZQgrV9Etl33c5MnfVr8e4OpGPCaq2vexrI=
+			MIJh1CfAMV1IkVOukFRHG0zg4YaBK3FGmyTpIwAj42s=
 			</data>
 		</dict>
 		<key>MHGAdSDK.bundle/ad_close.png</key>

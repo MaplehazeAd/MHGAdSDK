@@ -32,19 +32,18 @@ NS_ASSUME_NONNULL_BEGIN
 /// isVideo
 @property (nonatomic, readonly) BOOL isVideoAd;
 
-/// ecpm
-@property (nonatomic, readonly) NSInteger ecpm;
-
 /// coupon info
 @property (nonatomic, readonly, strong) MHGNativeAdCouponModel * coupon;
 
 @property (nonatomic, strong, readonly) NSDictionary * extraInfo;
 
-- (void)sendWinNotification:(NSInteger)ecpm;
+- (void)sendWinNotification:(NSString *)ecpm;
 
 // send loss
-- (void)sendLossNotification:(NSInteger)ecpm;
+- (void)sendLossNotification:(NSString *)ecpm;
 
+// get current ecpm
+- (NSString *)ecpm;
 
 - (MHAdExtraInfo *)getExtraInfo;
 

@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = 'MHGAdSDK'
-  s.version      = '1.0.0'
+  s.version      = '1.0.2'
   s.summary      = 'A local framework for advertisement SDK.'
   s.description  = <<-DESC
     MHAdSDK is a lightweight framework for managing advertisement integrations.

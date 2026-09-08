@@ -56,13 +56,13 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)presentFromRootViewController:(UIViewController * _Nonnull)rootViewController;
 
 // get current ecpm
-- (NSInteger)ecpm;
+- (NSString *)ecpm;
 
 // send win
-- (void)sendWinNotification:(NSInteger)ecpm;
+- (void)sendWinNotification:(NSString *)ecpm;
 
 // send loss
-- (void)sendLossNotification:(NSInteger)ecpm;
+- (void)sendLossNotification:(NSString *)ecpm;
 
 @end
 

@@ -10,7 +10,7 @@ target 'MHGAdSDKDemo' do
   
   # ----- -----
   # MHSDK
-  pod 'MHGAdSDK', '~> 1.0.0'
+  pod 'MHGAdSDK', '~> 1.0.2'
   pod 'Google-Mobile-Ads-SDK', '~> 13.5.0'
   
 end
