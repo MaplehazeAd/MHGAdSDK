@@ -25,6 +25,7 @@ Privacy Policy: [Maplehaze Group SDK Privacy Policy](https://maplehaze.com/sdk/p
 | **Version** | **Changes** | **Date** |
 | ----------- | ----------- | -------- |
 | 1.0.0       | 1. Initial release<br />2. Supports Splash, Rewarded Video, Native, and Interstitial ad formats<br />3. Supports Google AdMob integration<br />4. Supports CocoaPods integration | 2026.08.21 |
+| 1.0.2 | 1. Support bidding | 2026.09.09 |
 
 
 
@@ -63,7 +64,7 @@ target 'YourAppTarget' do
   use_frameworks!
 
   # Maplehaze Global Ad SDK
-  pod 'MHGAdSDK', '~> 1.0.0'
+  pod 'MHGAdSDK', '~> 1.0.2'
 
   # Google AdMob SDK (required)
   pod 'Google-Mobile-Ads-SDK', '~> 13.5.0'
