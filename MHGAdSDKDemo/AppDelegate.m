@@ -12,13 +12,10 @@
 #import "MHMainViewController.h"
 #import "UIView+toast.h"
 #include <objc/runtime.h>
-#import <CoreLocation/CoreLocation.h>
 
 @interface AppDelegate ()<MHGSplashAdDelegete>
 
 @property (nonatomic, strong) MHGSplashAd *splashAd;
-
-@property (nonatomic, strong) CLLocationManager *locationManager;
 
 @end
 
@@ -48,10 +45,6 @@
 
     // Execute code block after a delay
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(5 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-        // Delayed execution code
-        self.locationManager = [[CLLocationManager alloc] init];
-        self.locationManager.desiredAccuracy = kCLLocationAccuracyKilometer;
-        [self.locationManager requestWhenInUseAuthorization];
         
         if (@available(iOS 14, *)) {
             // iOS 14
