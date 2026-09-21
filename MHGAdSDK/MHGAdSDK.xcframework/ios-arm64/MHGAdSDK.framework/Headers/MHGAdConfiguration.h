@@ -6,6 +6,8 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "MHGAdPublicEnum.h"
+
 NS_ASSUME_NONNULL_BEGIN
 
 @interface MHGAdConfiguration : NSObject
@@ -37,30 +39,42 @@ NS_ASSUME_NONNULL_BEGIN
 // Developer mode. Default is NO.
 @property(nonatomic, assign) BOOL isDeveloperMode;
 
-@property(nonatomic, assign) NSInteger mediaFinalEcpm;
-
-/// This interface function:
-/// 1. Sets the enableDefaultAudioSessionSetting property of this singleton.
-/// ----- -----
-/// Call [MHGAdConfiguration sharedConfig].enableDefaultAudioSessionSetting = NO; before SDK loads ads via loadAd.
-/// Set the enableDefaultAudioSessionSetting property of this singleton.
-///
-/// ----- -----
-/// This interface is private; if not needed, it can be skipped. For GDT, if not set, it defaults to GDT's own YES.
-/// If setting is required, set it before loadAd. During subsequent initialization, the SDK will set this parameter when initializing the GDT SDK.
-///
-/// ----- Example usage -----
-/// 1. Initialize configuration:
-/// [MHGAdConfiguration sharedConfig].enableDefaultAudioSessionSetting = NO;
-/// 2. Register SDK:
-/// [[MHGAdManager sharedManager] registerApp];
-/// ----- -----
-///
-/// Note: When [AD loadAd] is called to request an ad, if the GDT SDK budget is requested, during GDT SDK initialization, [GDTSDKConfig enableDefaultAudioSessionSetting:BOOL] will be executed, passing the pre-set [MHGAdConfiguration sharedConfig].enableDefaultAudioSessionSetting as a parameter.
-@property(nonatomic, assign) BOOL enableDefaultAudioSessionSetting;
-
-/// 个性化推荐广告开关。0-开启个性化推荐广告（默认），1-关闭个性化推荐广告。
+/// Personalized ad recommendation. 0-enabled (default), 1-disabled.
 @property(nonatomic, assign) NSInteger personalizedState;
+
+#pragma mark - Google AdMob Configuration
+
+/// Max ad content rating for Google ads. Default MHGMaxAdContentRatingGeneral.
+/// Maps to GADRequestConfiguration.maxAdContentRating
+@property(nonatomic, assign) MHGMaxAdContentRating googleMaxAdContentRating;
+
+/// Test device identifiers that always receive test ads.
+/// Maps to GADRequestConfiguration.testDeviceIdentifiers
+@property(nonatomic, copy, nullable) NSArray<NSString *> *googleTestDeviceIdentifiers;
+
+/// Tag for under age of consent (GDPR). @YES / @NO / nil (unset).
+/// Maps to GADRequestConfiguration.tagForUnderAgeOfConsent
+@property(nonatomic, copy, nullable) NSNumber *googleTagForUnderAgeOfConsent;
+
+/// Tag for child-directed treatment (COPPA). @YES / @NO / nil (unset).
+/// Maps to GADRequestConfiguration.tagForChildDirectedTreatment
+@property(nonatomic, copy, nullable) NSNumber *googleTagForChildDirectedTreatment;
+
+/// Publisher first-party ID enabled. Default YES.
+/// Maps to GADRequestConfiguration setPublisherFirstPartyIDEnabled:
+@property(nonatomic, assign) BOOL googlePublisherFirstPartyIDEnabled;
+
+/// Publisher privacy personalization state. Default MHGPublisherPrivacyPersonalizationStateDefault.
+/// Maps to GADRequestConfiguration.publisherPrivacyPersonalizationState
+@property(nonatomic, assign) MHGPublisherPrivacyPersonalizationState googlePublisherPrivacyPersonalizationState;
+
+/// Application volume for Google ads. 0.0 (mute) ~ 1.0 (device volume). Default 1.0.
+/// Maps to GADMobileAds.applicationVolume
+@property(nonatomic, assign) CGFloat googleApplicationVolume;
+
+/// Whether Google ads audio is muted. Default NO.
+/// Maps to GADMobileAds.applicationMuted
+@property(nonatomic, assign) BOOL googleApplicationMuted;
 
 @end
 

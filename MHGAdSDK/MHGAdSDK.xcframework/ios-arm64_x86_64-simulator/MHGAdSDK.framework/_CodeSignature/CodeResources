@@ -10,11 +10,15 @@
 		</data>
 		<key>Headers/MHGAdConfiguration.h</key>
 		<data>
-		nNfta0CR6wS7CS+sfAej/5DMLBA=
+		J9QPWdo90PclwuumePtRj5+6yLE=
 		</data>
 		<key>Headers/MHGAdManager.h</key>
 		<data>
 		48JZ4fHy74wyo+ICmKKs5zBzNPI=
+		</data>
+		<key>Headers/MHGAdPublicEnum.h</key>
+		<data>
+		14GYbzvYHEdKh+lyoZg67S8gVUA=
 		</data>
 		<key>Headers/MHGAdSDK-Swift.h</key>
 		<data>
@@ -382,7 +386,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			jhTEaHcl0grd9iayANVgaa+JEQoGh1KAg1uR1zls44o=
+			iOxTkmCZN1lpWpwNKSeOPEDtBy9oauxO2dqRk8yfyNk=
 			</data>
 		</dict>
 		<key>Headers/MHGAdManager.h</key>
@@ -390,6 +394,13 @@
 			<key>hash2</key>
 			<data>
 			oYuRGGgbqyZxXuDFQ/ZRi0/Dnu1YijTH5Y+CaVe5z64=
+			</data>
+		</dict>
+		<key>Headers/MHGAdPublicEnum.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			wgCdhbSx5JMAJLapDAnlTaVjQgqqHi8/87w6JOS8w0o=
 			</data>
 		</dict>
 		<key>Headers/MHGAdSDK-Swift.h</key>
